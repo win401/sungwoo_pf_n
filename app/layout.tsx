@@ -1,4 +1,11 @@
 import "./globals.css";
+import { Shrikhand } from "next/font/google";
+
+const shrikhand = Shrikhand({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-shrikhand",
+});
 
 export const metadata = {
   title: "SUNGWOO | Web Publisher",
@@ -11,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${shrikhand.variable}`}>
       <body>{children}</body>
     </html>
   );
