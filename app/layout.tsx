@@ -32,6 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
+      suppressHydrationWarning
       className={`${pretendard.variable} ${shrikhand.variable} ${abhaya.variable}`}
     >
       <body>{children}</body>

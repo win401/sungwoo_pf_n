@@ -3,10 +3,14 @@ import Section from "./Section";
 export default function Skills() {
   return (
     <Section id="skills">
-      <h2 className="font-nav text-[40px] tracking-tight">Skills</h2>
-      <div className="grid grid-cols-2 mx-auto gap-[30px] mt-[30px] ml-[200px]">
+      <h2 className="font-nav text-[40px] tracking-tight text-[#444444]">
+        Skills
+      </h2>
+      <div className="grid grid-cols-2 mx-auto gap-[30px] mt-[30px] ml-[200px] text-[#666666]">
         <div>
-          <h3 className="font-nav text-[32px]">Markup & Accessibility</h3>
+          <h3 className="font-nav text-[32px] text-[#444444]">
+            Markup & Accessibility
+          </h3>
           <p className="text-[18px]">
             Semantic HTML 기반의 구조 설계와
             <br />
@@ -15,7 +19,9 @@ export default function Skills() {
         </div>
 
         <div>
-          <h3 className="font-nav text-[32px]">Layout & Responsive UI</h3>
+          <h3 className="font-nav text-[32px] text-[#444444]">
+            Layout & Responsive UI
+          </h3>
           <p className="text-[18px]">
             Grid와 Flex를 활용해 다양한 해상도에서도
             <br />
@@ -24,7 +30,9 @@ export default function Skills() {
         </div>
 
         <div>
-          <h3 className="font-nav text-[32px]">Interaction & Motion</h3>
+          <h3 className="font-nav text-[32px] text-[#444444] ">
+            Interaction & Motion
+          </h3>
           <p className="text-[18px]">
             CSS와 JavaScript를 활용한 과하지 않은 인터랙션과
             <br />
@@ -33,7 +41,9 @@ export default function Skills() {
         </div>
 
         <div>
-          <h3 className="font-nav text-[32px]">Frontend Workflow</h3>
+          <h3 className="font-nav text-[32px] text-[#444444]">
+            Frontend Workflow
+          </h3>
           <p className="text-[18px]">
             Next.js 환경에서 컴포넌트 단위 퍼블리싱과 협업을
             <br />
@@ -41,7 +51,7 @@ export default function Skills() {
           </p>
         </div>
       </div>
-      <div className="flex justify-end mt-[30px]">
+      <div className="flex justify-end mt-[30px] text-[#666666]">
         <p>HTML · CSS · Tailwind · JS · Next.js · Git · Figma</p>
       </div>
     </Section>

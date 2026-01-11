@@ -5,7 +5,9 @@ import { projects } from "../data/projects";
 export default function Projects() {
   return (
     <Section id="projects">
-      <h2 className="font-nav text-[40px] tracking-tight">Projects</h2>
+      <h2 className="font-nav text-[40px] tracking-tight text-[#444444]">
+        Projects
+      </h2>
 
       <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
         {projects.map((project) => (

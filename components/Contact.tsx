@@ -12,7 +12,9 @@ export default function ContactSection({ formId }: ContactSectionProps) {
 
   return (
     <Section id="contact">
-      <h2 className="font-nav text-[40px] tracking-tight">Contact Me</h2>
+      <h2 className="font-nav text-[40px] tracking-tight text-[#444444]">
+        Contact Me
+      </h2>
 
       <form
         onSubmit={handleSubmit}
