@@ -8,20 +8,22 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-const tagMetaMap = {
+type TagMeta = {
+  icon: IconType;
+  color: string;
+};
+
+const tagMetaMap: Record<string, TagMeta> = {
   HTML: { icon: FaHtml5, color: "#E34F26" },
   CSS: { icon: FaCss3Alt, color: "#1572B6" },
-
-  // ✅ JS
   JS: { icon: SiJavascript, color: "#F7DF1E" },
   JavaScript: { icon: SiJavascript, color: "#F7DF1E" },
-
   TypeScript: { icon: SiTypescript, color: "#3178C6" },
   React: { icon: FaReact, color: "#61DAFB" },
   "Next.js": { icon: SiNextdotjs, color: "#000000" },
   Tailwind: { icon: SiTailwindcss, color: "#38BDF8" },
   Git: { icon: FaGitAlt, color: "#F05032" },
-} as const;
+};
 
 type ProjectCardProps = {
   title: string;
@@ -73,7 +75,7 @@ export default function ProjectCard({
                 return (
                   <span
                     key={t}
-                    className="inline-flex items-center gap-1 rounded-md bg-black/5 px-2 py-1 text-xs text-black/70"
+                    className="inline-flex items-center gap-1 rounded-md bg-black/5 px-2 py-1 text-xs text-black/70 font-medium"
                     title={t}
                   >
                     <Icon
