@@ -93,7 +93,7 @@ export default function ContactSection({ formId }: ContactSectionProps) {
 
         {state.succeeded && (
           <p className="mt-3 text-sm text-emerald-600">
-            감사합니다! 📱연락처는 010-2675-9686 입니다!😻
+            💌전송완료! 📱연락처는 010-2675-9686 입니다!
           </p>
         )}
       </form>
