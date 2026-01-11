@@ -1,10 +1,22 @@
 import "./globals.css";
-import { Shrikhand } from "next/font/google";
+import { Shrikhand, Abhaya_Libre } from "next/font/google";
+import localFont from "next/font/local";
+
+const pretendard = localFont({
+  src: "./fonts/PretendardVariable.woff2",
+  variable: "--font-pretendard",
+});
 
 const shrikhand = Shrikhand({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-shrikhand",
+});
+
+const abhaya = Abhaya_Libre({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-abhaya",
 });
 
 export const metadata = {
@@ -18,7 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={`${shrikhand.variable}`}>
+    <html
+      lang="ko"
+      className={`${pretendard.variable} ${shrikhand.variable} ${abhaya.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

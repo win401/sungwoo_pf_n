@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["var(--font-pretendard)", "system-ui", "sans-serif"],
         title: ["var(--font-shrikhand)", "cursive"],
+        nav: ["var(--font-abhaya)", "serif"],
       },
     },
   },
