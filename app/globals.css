@@ -11,8 +11,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--font-pretendard), system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #333;
 }
 
 .nav-underline {
@@ -35,4 +38,15 @@ body {
 
 .nav-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
