@@ -9,17 +9,10 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "pizza-ui",
-    title: "Pizza UI",
-    imageSrc: "/images/pizza.png",
-    href: "#",
-    tags: ["HTML", "CSS"],
-  },
-  {
     id: "universal",
     title: "Universal",
     imageSrc: "/images/universal.png",
-    href: "#",
+    href: "https://win401.github.io/SungWoo-s-Portfolio/project3/project3.html",
     tags: ["HTML", "CSS", "JS"],
   },
 ];
