@@ -6,6 +6,7 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiTailwindcss,
+  SiGreensock,
 } from "react-icons/si";
 
 type TagMeta = {
@@ -22,6 +23,7 @@ const tagMetaMap: Record<string, TagMeta> = {
   React: { icon: FaReact, color: "#61DAFB" },
   "Next.js": { icon: SiNextdotjs, color: "#000000" },
   Tailwind: { icon: SiTailwindcss, color: "#38BDF8" },
+  GSAP: { icon: SiGreensock, color: "#88CE02" },
   Git: { icon: FaGitAlt, color: "#F05032" },
 };
 

@@ -41,8 +41,8 @@ export default function Skills() {
               Interaction & Motion
             </h3>
             <p className="text-[15px] sm:text-[17px] md:text-[18px] leading-[1.8] break-keep">
-              CSS와 JavaScript를 활용한 과하지 않은 인터랙션과 마이크로 모션을
-              구현합니다.
+              CSS, JavaScript, GSAP을 활용한 스크롤 연동 애니메이션과 과하지 않은
+              인터랙션을 구현합니다.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function Skills() {
 
         <div className="mt-12 sm:mt-16 pt-8 border-t border-[#E5E5E5]">
           <p className="text-[#666666] text-[15px] sm:text-[16px] text-center md:text-right">
-            HTML · CSS · Tailwind · JavaScript · Next.js · Git · Figma
+            HTML · CSS · Tailwind · JavaScript · Next.js · GSAP · Git · Figma
           </p>
         </div>
       </div>

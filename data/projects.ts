@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "Helinox",
     imageSrc: "/images/helinox.png",
     href: "https://helinox-pf.vercel.app/",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind"],
+    tags: ["Next.js", "TypeScript", "React", "Tailwind", "GSAP"],
   },
   {
     id: "universal",
