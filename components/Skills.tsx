@@ -16,7 +16,7 @@ export default function Skills() {
             text-[#666666]
           "
         >
-          <div className="space-y-3">
+          <div className="space-y-3" data-aos="fade-up" data-aos-delay="0">
             <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
               Markup & Accessibility
             </h3>
@@ -26,7 +26,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3" data-aos="fade-up" data-aos-delay="80">
             <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
               Layout & Responsive UI
             </h3>
@@ -36,7 +36,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3" data-aos="fade-up" data-aos-delay="160">
             <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
               Interaction & Motion
             </h3>
@@ -46,7 +46,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3" data-aos="fade-up" data-aos-delay="240">
             <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
               Frontend Workflow
             </h3>
@@ -57,7 +57,11 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-16 pt-8 border-t border-[#E5E5E5]">
+        <div
+          className="mt-12 sm:mt-16 pt-8 border-t border-[#E5E5E5]"
+          data-aos="fade-up"
+          data-aos-delay="320"
+        >
           <p className="text-[#666666] text-[15px] sm:text-[16px] text-center md:text-right">
             HTML · CSS · Tailwind · JavaScript · Next.js · GSAP · Git · Figma
           </p>

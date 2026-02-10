@@ -44,7 +44,7 @@ export default function ProjectCard({
     <a
       href={href}
       className="
-        group block
+        group flex h-full flex-col
         rounded-[5px] bg-white
         shadow-[0_8px_20px_rgba(0,0,0,0.08)]
         transition-transform duration-200
@@ -55,7 +55,7 @@ export default function ProjectCard({
       target={href !== "#" ? "_blank" : undefined}
       rel={href !== "#" ? "noopener noreferrer" : undefined}
     >
-      <div className="relative aspect-square w-full overflow-hidden">
+      <div className="relative aspect-square w-full shrink-0 overflow-hidden">
         <Image
           src={imageSrc}
           alt={`${title} thumbnail`}
@@ -64,7 +64,7 @@ export default function ProjectCard({
         />
       </div>
 
-      <div className="px-4 py-3">
+      <div className="flex min-h-[88px] flex-1 flex-col justify-center px-4 py-3">
         <p className="font-nav text-[16px] md:text-[18px]">{title}</p>
 
         {!!tags.length && (

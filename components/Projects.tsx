@@ -11,14 +11,20 @@ export default function Projects() {
         </h2>
 
         <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
-          {projects.map((project) => (
-            <ProjectCard
+          {projects.map((project, i) => (
+            <div
               key={project.id}
-              title={project.title}
-              imageSrc={project.imageSrc}
-              href={project.href}
-              tags={project.tags}
-            />
+              className="h-full min-h-0"
+              data-aos="fade-up"
+              data-aos-delay={i * 80}
+            >
+              <ProjectCard
+                title={project.title}
+                imageSrc={project.imageSrc}
+                href={project.href}
+                tags={project.tags}
+              />
+            </div>
           ))}
         </div>
       </div>

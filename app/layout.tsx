@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Shrikhand, Abhaya_Libre } from "next/font/google";
 import localFont from "next/font/local";
+import AOSInit from "@/components/AOSInit";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -35,7 +36,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${pretendard.variable} ${shrikhand.variable} ${abhaya.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <AOSInit />
+        {children}
+      </body>
     </html>
   );
 }
