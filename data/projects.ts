@@ -9,6 +9,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "helinox",
+    title: "Helinox",
+    imageSrc: "/images/helinox.png",
+    href: "https://helinox-pf.vercel.app/",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind"],
+  },
+  {
     id: "universal",
     title: "Universal",
     imageSrc: "/images/universal.png",
