@@ -19,9 +19,11 @@ export default function Projects() {
               data-aos-delay={i * 80}
             >
               <ProjectCard
+                id={project.id}
                 title={project.title}
                 imageSrc={project.imageSrc}
-                href={project.href}
+                imageFit={project.imageFit}
+                category={project.category}
                 tags={project.tags}
               />
             </div>

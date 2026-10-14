@@ -109,8 +109,8 @@ export default function Header() {
           sm:hidden
           fixed inset-0 top-[56px]
           bg-white/95 backdrop-blur-sm
-          transition-transform duration-300 ease-in-out
-          ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}
+          transition-opacity duration-300 ease-in-out
+          ${mobileMenuOpen ? "visible opacity-100" : "invisible pointer-events-none opacity-0"}
         `}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8">

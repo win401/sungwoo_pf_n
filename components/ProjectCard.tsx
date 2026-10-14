@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { IconType } from "react-icons";
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import {
@@ -28,21 +29,25 @@ const tagMetaMap: Record<string, TagMeta> = {
 };
 
 type ProjectCardProps = {
+  id: string;
   title: string;
   imageSrc: string;
-  href?: string;
-  tags?: string[];
+  imageFit?: "cover" | "contain";
+  category?: "work" | "personal";
+  tags: string[];
 };
 
 export default function ProjectCard({
+  id,
   title,
   imageSrc,
-  href = "#",
-  tags = [],
+  imageFit = "cover",
+  category,
+  tags,
 }: ProjectCardProps) {
   return (
-    <a
-      href={href}
+    <Link
+      href={`/projects/${id}`}
       className="
         group flex h-full flex-col
         rounded-[5px] bg-white
@@ -52,19 +57,20 @@ export default function ProjectCard({
         focus:outline-none focus:ring-2 focus:ring-black/30
         overflow-hidden
       "
-      target={href !== "#" ? "_blank" : undefined}
-      rel={href !== "#" ? "noopener noreferrer" : undefined}
     >
-      <div className="relative aspect-square w-full shrink-0 overflow-hidden">
+      <div className="relative aspect-square w-full shrink-0 overflow-hidden bg-[#f4f4f5]">
         <Image
           src={imageSrc}
           alt={`${title} thumbnail`}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          className={`${imageFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-[1.03]`}
         />
       </div>
 
       <div className="flex min-h-[88px] flex-1 flex-col justify-center px-4 py-3">
+        {category === "work" && (
+          <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">실무 프로젝트</p>
+        )}
         <p className="font-nav text-[16px] md:text-[18px]">{title}</p>
 
         {!!tags.length && (
@@ -103,6 +109,6 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-    </a>
+    </Link>
   );
 }

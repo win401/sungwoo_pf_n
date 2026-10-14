@@ -31,8 +31,8 @@ export default function Skills() {
               Layout & Responsive UI
             </h3>
             <p className="text-[15px] sm:text-[17px] md:text-[18px] leading-[1.8] break-keep">
-              Grid와 Flex를 활용해 다양한 해상도에서도 안정적인 반응형 UI를
-              구성합니다.
+              CSS Grid와 Flex를 활용해 반응형 레이아웃을 구성하고, 화면 크기에
+              맞춰 간격과 정렬을 직접 조정합니다.
             </p>
           </div>
 
@@ -48,11 +48,12 @@ export default function Skills() {
 
           <div className="space-y-3" data-aos="fade-up" data-aos-delay="240">
             <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
-              Frontend Workflow
+              React & TypeScript
             </h3>
             <p className="text-[15px] sm:text-[17px] md:text-[18px] leading-[1.8] break-keep">
-              Next.js 환경에서 컴포넌트 단위 퍼블리싱과 협업을 고려한 작업
-              흐름을 경험했습니다.
+              React·TypeScript 기반 프로젝트에서 AI 코딩 도구를 활용한 화면
+              구현과 API 연동을 경험했습니다. CSS를 직접 수정하고 팀 피드백을
+              반영하며 UI를 개선합니다.
             </p>
           </div>
         </div>
@@ -63,7 +64,7 @@ export default function Skills() {
           data-aos-delay="320"
         >
           <p className="text-[#666666] text-[15px] sm:text-[16px] text-center md:text-right">
-            HTML · CSS · Tailwind · JavaScript · Next.js · GSAP · Git · Figma
+            React · TypeScript · JavaScript · HTML · CSS · Next.js · GSAP · Git · Figma
           </p>
         </div>
       </div>
