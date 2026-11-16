@@ -47,6 +47,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             <p className="text-sm font-semibold text-[#2F6F4E]">{project.category === "work" ? "실무 프로젝트" : "PROJECT CASE STUDY"}</p>
             <h1 className="mt-3 text-3xl font-semibold text-[#333] sm:text-4xl">{project.title}</h1>
             <p className="mt-5 text-base leading-7 text-black/70">{project.summary}</p>
+            {project.statusNote && <p className="mt-5 rounded-md border border-[#2F6F4E]/20 bg-[#EAF4EE] p-4 text-sm leading-6 text-[#2F6F4E]">{project.statusNote}</p>}
 
             <div className="mt-7 flex flex-wrap gap-2">
               {project.tags.map((tag) => (
@@ -103,6 +104,34 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                 {highlight}
               </li>
             ))}
+          </ul>
+        </section>}
+
+        {!!project.process?.length && <section className="mt-14 border-t border-black/10 pt-12">
+          <p className="text-sm font-semibold text-[#2F6F4E]">IMPLEMENTATION STORY</p>
+          <h2 className="mt-2 text-2xl font-semibold text-[#333]">기획에서 구현까지</h2>
+          <div className="mt-7 space-y-5">
+            {project.process.map((step, index) => <div key={step.title} className="rounded-lg border border-black/10 bg-white p-5 sm:p-7">
+              <p className="text-xs font-semibold tracking-widest text-[#2F6F4E]">{String(index + 1).padStart(2, "0")}</p>
+              <h3 className="mt-2 text-xl font-semibold text-[#333]">{step.title}</h3>
+              <p className="mt-3 max-w-4xl leading-7 text-black/70">{step.body}</p>
+            </div>)}
+          </div>
+        </section>}
+
+        {project.scopeNote && <section className="mt-10 rounded-lg bg-[#EAF4EE] p-5 sm:p-7">
+          <h2 className="font-semibold text-[#2F6F4E]">참여 범위와 확인한 한계</h2>
+          <p className="mt-2 text-sm leading-6 text-black/70">{project.scopeNote}</p>
+        </section>}
+
+        {!!project.evidenceLinks?.length && <section className="mt-14 border-t border-black/10 pt-12">
+          <h2 className="text-2xl font-semibold text-[#333]">개발·배포 기록</h2>
+          <ul className="mt-5 flex flex-wrap gap-4">
+            {project.evidenceLinks.map((link) => <li key={link.url}>
+              <a href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-[#2F6F4E] underline underline-offset-4 hover:text-[#1E4F3A]">
+                {link.label}<FaArrowUpRightFromSquare aria-hidden />
+              </a>
+            </li>)}
           </ul>
         </section>}
 

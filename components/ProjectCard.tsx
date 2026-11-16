@@ -71,6 +71,9 @@ export default function ProjectCard({
         {category === "work" && (
           <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">실무 프로젝트</p>
         )}
+        {category === "personal" && (
+          <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">개인 실습 프로젝트</p>
+        )}
         <p className="font-nav text-[16px] md:text-[18px]">{title}</p>
 
         {!!tags.length && (

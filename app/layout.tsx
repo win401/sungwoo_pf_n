@@ -23,7 +23,7 @@ const abhaya = Abhaya_Libre({
 export const metadata = {
   title: "SUNGWOO | Frontend Developer",
   description:
-    "React와 Next.js를 기반으로 서비스 UI, AI 기능, 데이터 대시보드를 구현하는 프론트엔드 개발자 이성우의 포트폴리오입니다.",
+    "반응형 UI와 관제 대시보드 구현 경험을 바탕으로 GitHub Actions와 GCP 배포 흐름까지 학습하는 프론트엔드 개발자 이성우의 포트폴리오입니다.",
 };
 
 export default function RootLayout({

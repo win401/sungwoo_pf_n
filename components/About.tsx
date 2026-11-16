@@ -36,7 +36,7 @@ export default function About() {
 
             <div className="space-y-5 text-[15px] sm:text-[16px] md:text-[18px] leading-[1.8] text-[#666666] max-w-[540px] lg:max-w-none">
               <p className="break-keep text-[17px] sm:text-[18px] md:text-[20px] text-[#444444] font-medium">
-                &quot;UI 구현과 인터랙션에 강점을 가진 프론트엔드 개발자 이성우입니다.&quot;
+                &quot;UI 구현부터 클라우드 배포 흐름까지 이해하는 프론트엔드 개발자 이성우입니다.&quot;
               </p>
 
               <p className="break-keep">
@@ -48,11 +48,10 @@ export default function About() {
               </p>
 
               <p className="break-keep">
-                저는 사용자가 직접 마주하는 디테일에 민감합니다. 스크롤 흐름,
-                컴포넌트 간 간격, 전환 애니메이션의 속도처럼 작은 차이가 경험의
-                완성도를 바꾼다고 믿기 때문입니다. React와 Next.js 환경에서도 이런
-                감각을 살려, 디자인과 개발 사이를 안정적으로 연결하는 개발자로
-                성장하고 있습니다.
+                웹 퍼블리싱 경험을 바탕으로 관제 대시보드의 UI 개발에 참여했습니다.
+                개인 프로젝트에서는 GitHub Actions와 Google
+                Cloud Run을 활용한 배포 과정을 실습하고 있습니다. 화면 구현뿐 아니라
+                코드 변경이 서비스에 반영되는 과정까지 이해하는 개발자로 성장하고 있습니다.
               </p>
             </div>
           </div>

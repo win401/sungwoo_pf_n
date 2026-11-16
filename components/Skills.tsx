@@ -51,9 +51,20 @@ export default function Skills() {
               React & TypeScript
             </h3>
             <p className="text-[15px] sm:text-[17px] md:text-[18px] leading-[1.8] break-keep">
-              React·TypeScript 기반 프로젝트에서 AI 코딩 도구를 활용한 화면
-              구현과 API 연동을 경험했습니다. CSS를 직접 수정하고 팀 피드백을
+              React·TypeScript 기반 프로젝트에서 화면 구현과 API 연동을
+              경험했습니다. CSS를 직접 수정하고 팀 피드백을
               반영하며 UI를 개선합니다.
+            </p>
+          </div>
+          <div className="space-y-3 md:col-span-2" data-aos="fade-up" data-aos-delay="320">
+            <h3 className="font-nav text-[26px] sm:text-[30px] md:text-[34px] text-[#444444]">
+              Deployment & Cloud
+            </h3>
+            <p className="text-sm font-medium text-[#2F6F4E]">개인 프로젝트 기반 실습 · GitHub Actions · Cloud Run · Cloud SQL</p>
+            <p className="max-w-3xl text-[15px] sm:text-[17px] md:text-[18px] leading-[1.8] break-keep">
+              PR과 CI, 컨테이너 이미지 빌드, Google Cloud Run 배포로 이어지는 흐름을
+              다뤘습니다. 배포 로그와 설정을 확인하며 서비스와 데이터베이스의 연결 구조를
+              학습하고 있습니다.
             </p>
           </div>
         </div>
