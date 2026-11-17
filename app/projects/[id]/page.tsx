@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FaArrowLeft, FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
-import { projects } from "@/data/projects";
+import { projects, projectCategoryLabels } from "@/data/projects";
 
 type ProjectDetailPageProps = {
   params: Promise<{ id: string }>;
@@ -44,7 +44,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-[#2F6F4E]">{project.category === "work" ? "실무 프로젝트" : "PROJECT CASE STUDY"}</p>
+            <p className="text-sm font-semibold text-[#2F6F4E]">{projectCategoryLabels[project.category ?? "personal"]}</p>
             <h1 className="mt-3 text-3xl font-semibold text-[#333] sm:text-4xl">{project.title}</h1>
             <p className="mt-5 text-base leading-7 text-black/70">{project.summary}</p>
             {project.statusNote && <p className="mt-5 rounded-md border border-[#2F6F4E]/20 bg-[#EAF4EE] p-4 text-sm leading-6 text-[#2F6F4E]">{project.statusNote}</p>}
@@ -120,7 +120,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
         </section>}
 
         {project.scopeNote && <section className="mt-10 rounded-lg bg-[#EAF4EE] p-5 sm:p-7">
-          <h2 className="font-semibold text-[#2F6F4E]">참여 범위와 확인한 한계</h2>
+          <h2 className="font-semibold text-[#2F6F4E]">프로젝트 범위</h2>
           <p className="mt-2 text-sm leading-6 text-black/70">{project.scopeNote}</p>
         </section>}
 

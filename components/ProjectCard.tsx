@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { projectCategoryLabels, type Project } from "@/data/projects";
 import type { IconType } from "react-icons";
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import {
@@ -8,6 +9,15 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiGreensock,
+  SiVite,
+  SiLeaflet,
+  SiSpringboot,
+  SiSupabase,
+  SiFastapi,
+  SiPython,
+  SiOpenai,
+  SiGithubactions,
+  SiDocker,
 } from "react-icons/si";
 
 type TagMeta = {
@@ -26,6 +36,15 @@ const tagMetaMap: Record<string, TagMeta> = {
   Tailwind: { icon: SiTailwindcss, color: "#38BDF8" },
   GSAP: { icon: SiGreensock, color: "#88CE02" },
   Git: { icon: FaGitAlt, color: "#F05032" },
+  Vite: { icon: SiVite, color: "#646CFF" },
+  Leaflet: { icon: SiLeaflet, color: "#199900" },
+  "Spring Boot": { icon: SiSpringboot, color: "#6DB33F" },
+  Supabase: { icon: SiSupabase, color: "#3FCF8E" },
+  FastAPI: { icon: SiFastapi, color: "#009688" },
+  Python: { icon: SiPython, color: "#3776AB" },
+  OpenAI: { icon: SiOpenai, color: "#111111" },
+  "GitHub Actions": { icon: SiGithubactions, color: "#2088FF" },
+  Docker: { icon: SiDocker, color: "#2496ED" },
 };
 
 type ProjectCardProps = {
@@ -33,7 +52,7 @@ type ProjectCardProps = {
   title: string;
   imageSrc: string;
   imageFit?: "cover" | "contain";
-  category?: "work" | "personal";
+  category?: Project["category"];
   tags: string[];
 };
 
@@ -68,12 +87,9 @@ export default function ProjectCard({
       </div>
 
       <div className="flex min-h-[88px] flex-1 flex-col justify-center px-4 py-3">
-        {category === "work" && (
-          <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">실무 프로젝트</p>
-        )}
-        {category === "personal" && (
-          <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">개인 실습 프로젝트</p>
-        )}
+        <p className="mb-1 text-xs font-semibold text-[#2F6F4E]">
+          {projectCategoryLabels[category ?? "personal"]}
+        </p>
         <p className="font-nav text-[16px] md:text-[18px]">{title}</p>
 
         {!!tags.length && (
@@ -90,7 +106,7 @@ export default function ProjectCard({
                     title={t}
                   >
                     <Icon
-                      className="text-[14px] transition-transform group-hover:scale-110"
+                      className="shrink-0 text-[14px] transition-transform group-hover:scale-110"
                       style={{ color: meta.color }}
                       aria-hidden
                     />
