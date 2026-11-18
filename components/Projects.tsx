@@ -23,6 +23,7 @@ export default function Projects() {
                 title={project.title}
                 imageSrc={project.imageSrc}
                 imageFit={project.imageFit}
+                imageFrame={project.imageFrame}
                 category={project.category}
                 tags={project.tags}
               />

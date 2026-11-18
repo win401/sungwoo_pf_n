@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ProjectVisual from "@/components/ProjectVisual";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FaArrowLeft, FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
@@ -40,7 +40,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
       <article className="mx-auto w-full max-w-6xl px-5 pt-10 sm:px-8 sm:pt-16">
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:gap-16">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-black/10 bg-white shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
-            <Image src={project.imageSrc} alt={`${project.title} 대표 화면`} fill priority className={project.imageFit === "contain" ? "object-contain" : "object-cover"} />
+            <ProjectVisual imageSrc={project.imageSrc} title={project.title} imageFit={project.imageFit} imageFrame={project.imageFrame} priority />
           </div>
 
           <div>

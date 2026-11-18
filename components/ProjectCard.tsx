@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ProjectVisual from "./ProjectVisual";
 import Link from "next/link";
 import { projectCategoryLabels, type Project } from "@/data/projects";
 import type { IconType } from "react-icons";
@@ -52,6 +52,7 @@ type ProjectCardProps = {
   title: string;
   imageSrc: string;
   imageFit?: "cover" | "contain";
+  imageFrame?: Project["imageFrame"];
   category?: Project["category"];
   tags: string[];
 };
@@ -61,6 +62,7 @@ export default function ProjectCard({
   title,
   imageSrc,
   imageFit = "cover",
+  imageFrame,
   category,
   tags,
 }: ProjectCardProps) {
@@ -78,12 +80,7 @@ export default function ProjectCard({
       "
     >
       <div className="relative aspect-square w-full shrink-0 overflow-hidden bg-[#f4f4f5]">
-        <Image
-          src={imageSrc}
-          alt={`${title} thumbnail`}
-          fill
-          className={`${imageFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-[1.03]`}
-        />
+        <ProjectVisual imageSrc={imageSrc} title={title} imageFit={imageFit} imageFrame={imageFrame} className="transition-transform duration-300 group-hover:scale-[1.03]" />
       </div>
 
       <div className="flex min-h-[88px] flex-1 flex-col justify-center px-4 py-3">
