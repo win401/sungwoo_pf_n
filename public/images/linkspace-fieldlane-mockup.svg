@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-labelledby="title desc">
+  <title id="title">LINKSPACE 개발 현황 목업</title>
+  <desc id="desc">가상 데이터로 구성한 개발 현황 연결 화면을 보여 주는 노트북 일러스트</desc>
+  <defs>
+    <linearGradient id="back" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#f0f6fa"/><stop offset="1" stop-color="#cbd8e9"/></linearGradient>
+    <linearGradient id="metal" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#a4b2c5"/><stop offset=".42" stop-color="#e2eaf3"/><stop offset="1" stop-color="#7b8899"/></linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.2" fill="#dce4f1"/></pattern>
+  </defs>
+  <rect width="1254" height="1254" rx="44" fill="#e6edf4"/>
+  <rect width="1254" height="1254" rx="44" fill="url(#back)"/>
+  <ellipse cx="627" cy="1014" rx="526" ry="38" fill="#5c7294" opacity=".22"/>
+  <rect x="78" y="228" width="1098" height="726" rx="34" fill="#1c2740"/>
+  <rect x="96" y="247" width="1062" height="682" rx="19" fill="#f7faff"/>
+  <path d="M78 942h1098l62 39H16z" fill="url(#metal)"/>
+  <path d="M16 981h1222q-11 21-55 23H71q-44-2-55-23z" fill="#94a4b8"/>
+  <path d="M541 976h172q-6 13-21 13H562q-15 0-21-13" fill="#697c94"/>
+  <g font-family="Arial,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+    <text x="135" y="302" font-size="24" font-weight="800" fill="#172747" letter-spacing="1">LINKSPACE</text>
+    <rect x="939" y="273" width="174" height="37" rx="18" fill="#e7eefb"/>
+    <text x="1026" y="298" font-size="16" font-weight="700" fill="#304d86" text-anchor="middle">예시 · 가상 데이터</text>
+    <path d="M97 330h1060" stroke="#e1e9f4"/>
+    <text x="135" y="374" font-size="18" font-weight="700" fill="#3a60ac">현황 지도</text>
+    <text x="254" y="374" font-size="18" fill="#526481">요구사항</text>
+    <text x="373" y="374" font-size="18" fill="#526481">GitHub 현황</text>
+    <text x="525" y="374" font-size="18" fill="#526481">GCP 현황</text>
+    <path d="M135 392h75" stroke="#527bd0" stroke-width="4" stroke-linecap="round"/>
+    <text x="135" y="452" font-size="36" font-weight="700" fill="#172747">개발 현황 지도</text>
+    <text x="135" y="488" font-size="18" fill="#526481">코드 변경과 검사, 배포 상태를 읽기 전용으로 살펴보는 화면</text>
+    <rect x="135" y="532" width="976" height="326" rx="17" fill="#eef4fb" stroke="#d4dfef"/>
+    <rect x="135" y="532" width="976" height="326" rx="17" fill="url(#dots)"/>
+    <path d="M446 690h70m247 0h68" stroke="#7993bb" stroke-width="3" stroke-dasharray="6 5"/>
+    <path d="m508 684 8 6-8 6m315-12 8 6-8 6" fill="none" stroke="#7993bb" stroke-width="3"/>
+    <g fill="#fff" stroke="#d0def1">
+      <rect x="181" y="623" width="265" height="135" rx="15"/>
+      <rect x="516" y="623" width="247" height="135" rx="15"/>
+      <rect x="831" y="623" width="233" height="135" rx="15"/>
+    </g>
+    <g fill="#526481" font-size="16" font-weight="700">
+      <text x="207" y="659">01 · GitHub</text><text x="542" y="659">02 · 자동 검사</text><text x="857" y="659">03 · Google Cloud</text>
+    </g>
+    <g fill="#223b68" font-size="23" font-weight="700">
+      <text x="207" y="702">코드 변경</text><text x="542" y="702">CI 결과</text><text x="857" y="702">배포 현황</text>
+    </g>
+    <g fill="#526481" font-size="16">
+      <text x="207" y="733">PR과 커밋 확인</text><text x="542" y="733">워크플로 실행 확인</text><text x="857" y="733">Cloud Run 상태 확인</text>
+    </g>
+    <text x="160" y="820" font-size="15" fill="#526481">화면 구성 예시입니다. 실제 연결 상태를 표시하지 않습니다.</text>
+  </g>
+</svg>
