@@ -139,7 +139,7 @@ export const projects: Project[] = [
     id: "ugv-practice",
     title: "LINKSPACE · 개발 현황 연결 도구",
     category: "personal",
-    imageSrc: "/images/linkspace-fieldlane-mockup.svg",
+    imageSrc: "/images/linkspace-laptop-mockup.png",
     imageFit: "contain",
     tags: ["Next.js", "React", "TypeScript", "GitHub API", "GCP"],
     period: "2026.11",
@@ -170,7 +170,7 @@ export const projects: Project[] = [
         body: "요구사항 문서의 버전과 변경 이력, PR·CI 결과, 클라우드 상태를 각각의 원본과 함께 확인하도록 구성했습니다. 일부 연결만 조회되어도 그 정보는 유지하고, 미확인 항목에는 이유를 표시합니다. 현재 상태를 대신 판단해 단정하기보다 개발자가 근거를 찾아가도록 돕는 데 중점을 뒀습니다."
       }
     ],
-    statusNote: "대표 이미지는 LINKSPACE의 화면 구성을 가상 데이터로 설명한 목업입니다. 현재 연결 상태를 캡처한 화면은 아닙니다.",
+    statusNote: "대표 이미지는 LINKSPACE 화면을 노트북 목업에 담은 것으로, 캡처 당시의 상태를 보여줍니다.",
     learnings: "개발 지원 화면은 많은 정보를 모으는 것보다 각 정보의 출처와 조회 시점, 확인하지 못한 범위를 분명히 보여주는 것이 중요했습니다. 읽기 전용 연결과 근거 기반 표시를 통해 사용자가 원본을 바꾸지 않고도 개발 흐름을 이해하도록 설계하는 경험을 쌓았습니다.",
   },
   {
